@@ -1,0 +1,72 @@
+/*-----------------------
+ヘッダー
+------------------------*/
+/*
+height: 100vh;
+メインビジュアルを画面の高さにあわせる
+*/
+.header {
+  position: relative;
+  margin-bottom: 80px;
+  height: 100vh;
+  background-image: url("../images/mainvisual.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  h1 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    padding: 10px 30px;
+    background: #222;
+    font-size: 6rem;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    color: #fff;
+  }
+  span {
+    font-weight: normal;
+  }
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: #d8d8d8;
+  }
+}
+
+.header-second-page {
+  position: relative;
+  margin-bottom: 80px;
+  height: 50vh;
+  background-image: url("../images/mainvisual2.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  h1 {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    padding: 10px 30px;
+    background: #222;
+    font-size: 6rem;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    color: #fff;
+  }
+  span {
+    font-weight: normal;
+  }
+  a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
+  }
+  a:hover {
+    color: #d8d8d8;
+  }
+}

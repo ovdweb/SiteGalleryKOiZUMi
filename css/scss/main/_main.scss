@@ -1,0 +1,238 @@
+/*-----------------------
+layout-type-a
+------------------------*/
+.layout-type-a {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  text-align: center;
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #222;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 1.75;
+    color: #222;
+  }
+  @media screen and (max-width: 600px) {
+    margin: 0 auto;
+    padding: 0 5%;
+    h2 {
+      font-size: 2.8rem;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.75;
+    }
+  }
+}
+
+/*-----------------------
+  layout-type-b
+  ------------------------*/
+.layout-type-b {
+  max-width: 1200px;
+  margin: 0 auto 80px;
+  text-align: center;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__body {
+    width: 49%;
+    position: relative;
+    a {
+      transition: all 0.5s ease;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+  &__text {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    margin: 0 auto;
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    h2 {
+      margin-bottom: 1rem;
+      font-size: 2.4rem;
+      font-weight: normal;
+      line-height: 1.2;
+      color: #fff;
+    }
+    p {
+      font-size: 1.4rem;
+      line-height: 1.75;
+      color: #fff;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    padding: 5%;
+    &__wrapper {
+      flex-direction: column;
+    }
+    &__body {
+      width: 100%;
+    }
+    &__body:first-child {
+      margin-bottom: 30px;
+    }
+    &__text {
+      top: 30%;
+    }
+  }
+}
+
+/*-----------------------
+  layout-type-c
+  ------------------------*/
+.layout-type-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  height: 520px;
+  background-image: url("../images/image005.jpg");
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1.2;
+    color: #fff;
+    text-shadow: 1px 1px 1px #111;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 1.75;
+    color: #fff;
+    text-shadow: 1px 1px 1px #111;
+  }
+  @media screen and (max-width: 600px) {
+    padding: 10%;
+    h2 {
+      font-size: 3rem;
+    }
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+/*-----------------------
+  layout-type-d
+  ------------------------*/
+.layout-type-d {
+  background-color: #eee;
+  margin-bottom: 80px;
+  padding: 60px 0;
+  &__body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__item {
+    width: 48%;
+    img {
+      width: 100%;
+    }
+  }
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: normal;
+    line-height: 1;
+    color: #222;
+  }
+  p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: #222;
+  }
+  @media screen and (max-width: 600px) {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+    &__item {
+      width: 90%;
+      img {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+
+/*-----------------------
+  layout-type-e（second page）
+  ------------------------*/
+.layout-type-e {
+  background-color: #eee;
+  margin-bottom: 80px;
+  padding: 60px 0;
+  &__body {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  &__item {
+    width: 48%;
+    img {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    img:last-child {
+      margin-bottom: 0rem;
+    }
+  }
+  h2 {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+    font-weight: normal;
+    line-height: 1;
+    color: #222;
+  }
+  p {
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
+    line-height: 2;
+    color: #222;
+  }
+  @media screen and (max-width: 600px) {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+    &__item {
+      width: 90%;
+      margin-bottom: 4rem;
+      img {
+        margin-bottom: 2rem;
+      }
+      p:last-child {
+        margin-bottom: -5rem;
+      }
+    }
+  }
+}
